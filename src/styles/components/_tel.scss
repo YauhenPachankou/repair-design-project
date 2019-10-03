@@ -5,11 +5,4 @@
     text-decoration-line: underline;
     color: $text-color--main;
   }
-
-  &:hover,
-  &:focus {
-    color: complement($text-color--main);
-
-    outline: none;
-  }
 }

@@ -6,13 +6,15 @@
   padding-bottom: 24px;
   padding-left: 18 / 375 * 100%;
 
-  background-color: $bg-color--main;
+  background-color: $bg-color--dark;
 
   @media (min-width: $screen-desktop) {
     min-height: 83px;
     padding-top: 24px;
-    padding-right: 102 / 1440 * 100%;
+    padding-right: 102px;
     padding-bottom: 22px;
-    padding-left: 82 / 1440 * 100%;
+    padding-left: 82px;
+
+    background-color: $bg-color--darken;
   }
 }

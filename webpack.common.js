@@ -11,6 +11,10 @@ module.exports = {
         loader: 'babel-loader',
       },
       {
+        test: /\.html$/,
+        use: ['html-loader'],
+      },
+      {
         test: /\.(jpe?g|png|woff2|svg)(\?[a-z0-9=.]+)?$/,
         use: [
           {

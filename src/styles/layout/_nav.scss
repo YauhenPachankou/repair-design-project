@@ -10,7 +10,7 @@
   margin-right: auto;
 
   @media (min-width: $screen-desktop) {
-     margin-right: 95 / 1256 * 100%;
+     margin-right: 95px;
   }
 }
 
@@ -19,7 +19,7 @@
 
   @media (min-width: $screen-desktop) {
     display: flex;
-    margin-right: 67 / 1256 * 100%;
+    margin-right: 67px;
   }
 }
 
@@ -28,7 +28,7 @@
 
   @media (min-width: $screen-desktop) {
     display: block;
-    width: 161 / 1256 * 100%;
+    width: 161px;
     min-height: 37px;
     margin-left: auto;
   }

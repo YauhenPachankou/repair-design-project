@@ -6,7 +6,7 @@ body {
   max-width: $screen-desktop;
   margin: 0 auto;
 
-  background-color: $bg-color--main;
+  background-color: $bg-color--darken;
 }
 
 *,
@@ -23,6 +23,13 @@ img {
 a {
   text-decoration: none;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: complement($text-color--main);
+
+    outline: none;
+  }
 }
 
 .visually-hidden:not(:focus):not(:active) {

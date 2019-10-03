@@ -1,0 +1,135 @@
+.calculation {
+  position: relative;
+
+  width: 100%;
+  min-height: 476px;
+  padding-top: 85px;
+  padding-right: 18 / 375 * 100%;
+  padding-left: 18 / 375 * 100%;
+
+  background-color: $bg-color--darken;
+  background-image: url("../assets/images/bg-calculation--mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+
+  @media (min-width: $screen-desktop) {
+    min-height: 707px;
+    padding-top: 194px;
+    padding-right: 0;
+    padding-left: 142px;
+
+    background-image: url("../assets/images/bg-calculation--desktop.jpg");
+    background-position: 0 0;
+    background-position-x: 82px;
+  }
+}
+
+.calculation__title {
+  @include setFont($font-family--3, 23px, 132%, 400, left, uppercase, $text-color--light);
+
+  margin-bottom: 16px;
+
+  @media (min-width: $screen-desktop) {
+    width: 520px;
+    margin-bottom: 19px;
+
+    font-size: 40px;
+    line-height: 53px;
+  }
+
+  span {
+    color: $text-color--main;
+  }
+}
+
+.calculation__description {
+  @include setFont($font-family--2, 18px, 130%, 400, left, none, $text-color--light);
+
+  width: 285px;
+  margin-bottom: 32px;
+
+  @media (min-width: $screen-desktop) {
+    width: 435px;
+    margin-bottom: 41px;
+
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+.calculation__btn-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $screen-desktop) {
+    flex-direction: row;
+  }
+}
+
+.calculation__btn {
+  width: 338px;
+  min-height: 51px;
+
+  @media (min-width: $screen-desktop) {
+    width: 207px;
+  }
+
+  &--transparent {
+    margin-top: 26px;
+
+    background-color: transparent;
+    border: 1px solid $bg-color--light;
+
+    @media (min-width: $screen-desktop) {
+      margin-top: 0;
+      margin-left: 20px;
+    }
+
+    span {
+      @include setFont($font-family--1, 13px, 15px, 400, center, uppercase, $text-color--light);
+
+      &:last-child {
+        display: none;
+
+        @media (min-width: $screen-desktop) {
+          display: inline;
+        }
+      }
+
+      &:first-child {
+        @media (min-width: $screen-desktop) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.calculation__instagram-wrapper {
+  display: none;
+
+  @media (min-width: $screen-desktop) {
+    position: absolute;
+    top: 250px;
+    left: 0;
+
+    display: block;
+
+    transform: rotate(90deg);
+  }
+}
+
+.calculation__scroll-btn {
+  display: none;
+
+  @media (min-width: $screen-desktop) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+
+    transform: translateY(50%);
+  }
+}

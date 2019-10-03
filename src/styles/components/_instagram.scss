@@ -1,0 +1,25 @@
+.instagram {
+  @include setFont($font-family--1, 14px, 16px, 400, center, uppercase, $text-color--main);
+
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 120%;
+
+    width: 51px;
+    height: 1px;
+
+    background-color: $text-color--main;
+
+    content: '';
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      background-color: complement($text-color--main);
+    }
+  }
+}

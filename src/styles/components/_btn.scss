@@ -1,14 +1,16 @@
 .btn {
   @include setFont($font-family--1, 13px, 15px, 400, center, uppercase, $text-color--light);
 
-  background-color: $text-color--main;
+  padding: 0;
+
+  background-color: $btn-bgcolor--main;
   border: 0;
   border-radius: 2px;
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
 
   &:hover,
   &:focus {
-    background-color: complement($text-color--main);
+    background-color: complement($btn-bgcolor--main);
 
     outline: none;
   }

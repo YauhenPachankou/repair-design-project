@@ -5,11 +5,4 @@
     font-size: 14px;
     line-height: 16px;
   }
-
-  &:hover,
-  &:focus {
-    color: complement($text-color--main);
-
-    outline: none;
-  }
 }
