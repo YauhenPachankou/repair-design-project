@@ -1,0 +1,15 @@
+.logo {
+  @include setFont($font-family--1, 12px, 14px, 400, left, uppercase, $text-color--main);
+
+  @media (min-width: $screen-desktop) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &:hover,
+  &:focus {
+    color: complement($text-color--main);
+
+    outline: none;
+  }
+}

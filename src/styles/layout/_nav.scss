@@ -1,18 +1,35 @@
 .nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   width: 100%;
-  min-height: 83px;
-  padding-top: 24px;
-  padding-right: 7%;
-  padding-bottom: 22px;
-  padding-left: 5%;
-
-  background-color: red;
+  height: 100%;
 }
 
-.nav__items-wrapper {
-  display: flex;
-  width: 100%;
-  min-height: 37px;
+.nav__logo {
+  margin-right: auto;
 
-  background-color: green;
+  @media (min-width: $screen-desktop) {
+     margin-right: 95 / 1256 * 100%;
+  }
+}
+
+.nav__list-of-pages {
+  display: none;
+
+  @media (min-width: $screen-desktop) {
+    display: flex;
+    margin-right: 67 / 1256 * 100%;
+  }
+}
+
+.nav__btn {
+  display: none;
+
+  @media (min-width: $screen-desktop) {
+    display: block;
+    width: 161 / 1256 * 100%;
+    min-height: 37px;
+    margin-left: auto;
+  }
 }

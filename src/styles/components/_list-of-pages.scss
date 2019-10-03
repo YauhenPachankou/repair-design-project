@@ -1,0 +1,22 @@
+.list-of-pages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 581 / 1256 * 100%;
+}
+
+.list-of-pages__page {
+  @include setFont($font-family--2, 14px, 16px, 400, left, uppercase, $text-color--light);
+
+  &:hover,
+  &:focus {
+    color: darken($text-color--light, 30%);
+
+    outline: none;
+  }
+
+  &--active {
+    color: $text-color--main;
+  }
+}
