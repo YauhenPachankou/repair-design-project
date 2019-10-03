@@ -1,10 +1,10 @@
 .tel {
   @include setFont($font-family--1, 14px, 16px, 400, right, uppercase, $text-color--light);
-  text-decoration-line: underline;
 
-   @media (min-width: $screen-desktop) {
-     color: $text-color--main;
-   }
+  @media (min-width: $screen-desktop) {
+    text-decoration-line: underline;
+    color: $text-color--main;
+  }
 
   &:hover,
   &:focus {
