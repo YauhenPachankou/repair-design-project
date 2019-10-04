@@ -26,9 +26,9 @@
 }
 
 .calculation__title {
-  @include setFont($font-family--3, 23px, 132%, 400, left, uppercase, $text-color--light);
-
   margin-bottom: 16px;
+
+  text-align: left;
 
   @media (min-width: $screen-desktop) {
     width: 520px;
@@ -44,7 +44,7 @@
 }
 
 .calculation__description {
-  @include setFont($font-family--2, 18px, 130%, 400, left, none, $text-color--light);
+  @include setFont($font-family--2, 18px, 24px, 400, left, none, $text-color--light);
 
   width: 285px;
   margin-bottom: 32px;

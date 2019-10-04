@@ -1,0 +1,13 @@
+.projects {
+  width: 100%;
+  min-height: 670px;
+
+  background-color: $bg-color--dark;
+  border-bottom: 1px solid $text-color--main;
+
+  @media (min-width: $screen-desktop) {
+    min-height: 1073px;
+
+      background-color: $bg-color--darken;
+  }
+}

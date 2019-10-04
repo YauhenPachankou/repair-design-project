@@ -1,0 +1,10 @@
+.repair-types {
+  width: 100%;
+  min-height: 2030px;
+
+  background-color: $bg-color--light;
+
+  @media (min-width: $screen-desktop) {
+    min-height: 1485px;
+  }
+}

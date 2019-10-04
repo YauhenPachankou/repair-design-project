@@ -1,0 +1,11 @@
+.section-title {
+  @include setFont($font-family--3, 23px, 30px, 400, center, uppercase, $text-color--main);
+
+  &--light {
+    color: $text-color--light;
+  }
+
+  &--dark {
+    color: $text-color--darkest;
+  }
+}

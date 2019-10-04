@@ -1,0 +1,3 @@
+.section-description {
+  @include setFont($font-family--2, 15px, 22px, 400, center, none, $text-color--light);
+}
