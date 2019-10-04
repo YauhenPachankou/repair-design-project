@@ -10,7 +10,7 @@
   background-color: $bg-color--darken;
   background-image: url("../assets/images/bg-calculation--mobile.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center center;
   background-size: cover;
 
   @media (min-width: $screen-desktop) {
@@ -68,7 +68,7 @@
 }
 
 .calculation__btn {
-  width: 338px;
+  max-width: 338px;
   min-height: 51px;
 
   @media (min-width: $screen-desktop) {
