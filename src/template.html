@@ -52,7 +52,8 @@
       </div>
       <button class="scroll-btn calculation__scroll-btn">
         <p class="scroll-btn__text">Scroll down</p>
-        <img class="scroll-btn__img" src="./assets/images/icon-scroll--down.svg" alt="Arrow down" width="29" height="29">
+        <img class="scroll-btn__img" src="./assets/images/icon-scroll--down.svg" alt="Arrow down" width="29"
+          height="29">
       </button>
     </section>
 
@@ -63,15 +64,31 @@
     <section class="control">
       <h3 class="section-title section-title--light control__title">online control</h3>
       <div class="section-icon control__section-icon">
-        <img src="./assets/images/camera.svg" alt="Camera" width="32" height="28"/>
+        <img src="./assets/images/camera.svg" alt="Camera" width="32" height="28" />
       </div>
       <iframe class="control__video" src="https://www.youtube.com/embed/mfPE0FDIk_w" frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <p class="section-description control__description">
-          At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you
-          can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast
-          from one of our facilities! Leave a request below and you will receive a link to the broadcast.
-        </p>
+      <p class="section-description control__description">
+        At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you
+        can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast
+        from one of our facilities! Leave a request below and you will receive a link to the broadcast.
+      </p>
+      <form class="form control__form" action="#">
+        <label class="form__field">
+          <div>Name:</div>
+          <input class="form__input" type="text" placeholder="What is your name:">
+        </label>
+        <label class="form__field form__field--last">
+          <div>Number:</div>
+          <input class="form__input" type="tel" placeholder="Your phone number:">
+        </label>
+        <label class="form__checkbox">
+          <input class="form__checkbox-input" type="checkbox">
+          <div class="form__custom-checkbox"></div>
+          <span>I agree to the processing of personal data</span>
+        </label>
+        <button class="btn form__submit control__submit-btn" type="submit">SUMBIT</button>
+      </form>
     </section>
 
     <section class="repair-types">
