@@ -1,10 +1,32 @@
 .repair-types {
   width: 100%;
   min-height: 2030px;
+  padding-top: 83px;
+  padding-right: 18 / 375 * 100%;
+  padding-left: 18 / 375 * 100%;
 
   background-color: $bg-color--light;
 
   @media (min-width: $screen-desktop) {
     min-height: 1485px;
+    padding-top: 775px;
+    padding-right: 100px;
+    padding-left: 104px;
+  }
+}
+
+.repair-types__title {
+  margin-bottom: 17px;
+
+  @media (min-width: $screen-desktop) {
+    margin-bottom: 13px;
+  }
+}
+
+.repair-types__section-icon {
+  margin-bottom: 40px;
+
+  @media (min-width: $screen-desktop) {
+    margin-bottom: 31px;
   }
 }

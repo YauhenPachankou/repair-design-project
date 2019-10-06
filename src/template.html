@@ -51,14 +51,14 @@
         <a class="instagram" href="https://www.instagram.com" target="_blank">INSTAGRAM</a>
       </div>
       <button class="scroll-btn calculation__scroll-btn">
-        <p class="scroll-btn__text">Scroll down</p>
+        <span class="scroll-btn__text">Scroll down</span>
         <img class="scroll-btn__img" src="./assets/images/icon-scroll--down.svg" alt="Arrow down" width="29"
           height="29">
       </button>
     </section>
 
     <section class="projects">
-
+      <h2 aria-hidden="true">asd</h2>
     </section>
 
     <section class="control">
@@ -66,8 +66,7 @@
       <div class="section-icon control__section-icon">
         <img src="./assets/images/camera.svg" alt="Camera" width="32" height="28" />
       </div>
-      <iframe class="control__video" src="https://www.youtube.com/embed/mfPE0FDIk_w" frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="control__video" src="https://www.youtube.com/embed/Gi5pCRt2Ns4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <p class="section-description control__description">
         At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you
         can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast
@@ -75,16 +74,16 @@
       </p>
       <form class="form control__form" action="#">
         <label class="form__field">
-          <div>Name:</div>
-          <input class="form__input" type="text" placeholder="What is your name:">
+          <span>Name:</span>
+          <input class="form__input" type="text" placeholder="What is your name:" required>
         </label>
         <label class="form__field form__field--last">
-          <div>Number:</div>
-          <input class="form__input" type="tel" placeholder="Your phone number:">
+          <span>Number:</span>
+          <input class="form__input" type="tel" placeholder="Your phone number:" required>
         </label>
         <label class="form__checkbox">
           <input class="form__checkbox-input" type="checkbox" checked>
-          <div class="form__custom-checkbox"></div>
+          <span class="form__custom-checkbox"></span>
           <span>I agree to the processing of personal data</span>
         </label>
         <button class="btn form__submit control__submit-btn" type="submit">SUMBIT</button>
@@ -92,7 +91,62 @@
     </section>
 
     <section class="repair-types">
+      <h3 class="section-title section-title--dark repair-types__title">TYPES OF REPAIR</h3>
+      <div class="section-icon repair-types__section-icon">
+        <img src="./assets/images/tools.svg" alt="Tools" width="28" height="28" />
+      </div>
+      <ul class="cards-list repair-types__cards-list">
+        <li class="cards-list__item card">
+          <img class="card__image" src="./assets/images/redecorating.jpg" alt="Redecorating">
+          <section class="card__description">
+            <h4>Redecorating</h4>
+            <ul>
+              <li>Dismantling of old coatings</li>
+              <li>Wallpapering</li>
+              <li>Painting walls and ceilings</li>
+              <li>Laying flooring</li>
+              <li>Replacing plumbing</li>
+              <li>Replacing sockets and switches</li>
+              <li>Replacing doors</li>
+            </ul>
+            <div class="btn">from 900 rub / m2</div>
+          </section>
+        </li>
 
+        <li class="cards-list__item card">
+          <img class="card__image" src="./assets/images/overhaul.jpg" alt="Redecorating">
+          <section class="card__description">
+            <h4>Overhaul</h4>
+            <ul>
+              <li>Dismantling of old coatings</li>
+              <li>Wallpapering</li>
+              <li>Painting walls and ceilings</li>
+              <li>Laying flooring</li>
+              <li>Replacing plumbing</li>
+              <li>Replacing sockets and switches</li>
+              <li>Replacing doors</li>
+            </ul>
+            <div class="btn">from 1800 rub / m2</div>
+          </section>
+        </li>
+
+        <li class="cards-list__item card">
+          <img class="card__image" src="./assets/images/designer-repair.jpg" alt="Redecorating">
+          <section class="card__description">
+            <h4>Designer Repair</h4>
+            <ul>
+              <li>Dismantling of old coatings</li>
+              <li>Wallpapering</li>
+              <li>Painting walls and ceilings</li>
+              <li>Laying flooring</li>
+              <li>Replacing plumbing</li>
+              <li>Replacing sockets and switches</li>
+              <li>Replacing doors</li>
+            </ul>
+            <div class="btn">from 4000 rub / m2</div>
+          </section>
+        </li>
+      </ul>
     </section>
   </main>
 </body>
