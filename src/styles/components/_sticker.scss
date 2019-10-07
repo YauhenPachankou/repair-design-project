@@ -1,0 +1,21 @@
+.sticker {
+  display: flex;
+  align-items: center;
+}
+
+.sticker__image-bg {
+  @include centering();
+
+  width: 72px;
+  height: 72px;
+  margin-right: 25px;
+
+  background-color: $text-color--main;
+  border-radius: 50%;
+}
+
+.sticker__text {
+  @include setFont($font-family--1, 20px, 25px, 400, left, none, $text-color--main);
+
+  text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+}

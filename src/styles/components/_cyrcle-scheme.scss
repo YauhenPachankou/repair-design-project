@@ -1,0 +1,47 @@
+.cyrcle-scheme {
+  position: relative;
+
+  width: 780px;
+  height: 636px;
+
+  background-image: url("../assets/images/building.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom 46px left 0;
+}
+
+.cyrcle-scheme__cyrcle {
+  position: absolute;
+  left: -156px;
+
+  width: 636px;
+  height: 636px;
+
+  border-width: 3px;
+  border-style: solid;
+  border-color: $text-color--main;
+  border-radius: 50%;
+}
+
+.cyrcle-scheme__caption {
+  position: absolute;
+
+  &--01 {
+    top: 62px;
+    left: 350px;
+  }
+
+  &--02 {
+    top: 173px;
+    left: 425px;
+  }
+
+  &--03 {
+    top: 334px;
+    left: 445px;
+  }
+
+  &--04 {
+    top: 480px;
+    left: 385px;
+  }
+}

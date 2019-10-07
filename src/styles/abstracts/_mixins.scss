@@ -12,8 +12,7 @@
   $weight: 400,
   $align: left,
   $transform: lowercase,
-  $colour: $text-color--light
-  ) {
+  $colour: $text-color--light) {
   font-family: $family;
   font-size: $size;
   line-height: $lh;
@@ -22,4 +21,3 @@
   text-transform: $transform;
   color: $colour;
 }
-

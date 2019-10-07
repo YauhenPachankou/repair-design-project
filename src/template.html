@@ -11,11 +11,9 @@
 <body>
   <header class="home-header">
     <nav class="nav">
-
       <a class="logo nav__logo" href="#">
         <h1>IC "RERAIR DESIGN PROJECT"</h1>
       </a>
-
       <div class="list-of-pages nav__list-of-pages">
         <a class="list-of-pages__page list-of-pages__page--active" href="#">HOME</a>
         <a class="list-of-pages__page" href="#">PROJECTS</a>
@@ -24,9 +22,7 @@
         <a class="list-of-pages__page" href="#">REVIEWS</a>
         <a class="list-of-pages__page" href="#">CONTACTS</a>
       </div>
-
       <a class="tel nav__tel" href="tel:+7(928)768-32-39">+7 (928) 768-32-39</a>
-
       <button class="btn nav__btn">Request a call</button>
     </nav>
   </header>
@@ -58,7 +54,7 @@
     </section>
 
     <section class="projects">
-      <h2 aria-hidden="true">asd</h2>
+      <h2 class="visually-hidden">Projects</h2>
     </section>
 
     <section class="control">
@@ -66,7 +62,8 @@
       <div class="section-icon control__section-icon">
         <img src="./assets/images/camera.svg" alt="Camera" width="32" height="28" />
       </div>
-      <iframe class="control__video" src="https://www.youtube.com/embed/Gi5pCRt2Ns4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="control__video" src="https://www.youtube.com/embed/Gi5pCRt2Ns4"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <p class="section-description control__description">
         At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you
         can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast
@@ -86,7 +83,7 @@
           <span class="form__custom-checkbox"></span>
           <span>I agree to the processing of personal data</span>
         </label>
-        <button class="btn form__submit control__submit-btn" type="submit">SUMBIT</button>
+        <button class="btn form__btn control__submit-btn" type="submit">SUMBIT</button>
       </form>
     </section>
 
@@ -147,6 +144,78 @@
           </section>
         </li>
       </ul>
+    </section>
+
+    <section class="advantages">
+      <h3 class="visually-hidden">Advantages</h3>
+      <div class="advantages__content-wrapper">
+        <div class="cyrcle-scheme">
+          <div class="cyrcle-scheme__cyrcle" aria-hidden="true"></div>
+          <p class="scheme-caption cyrcle-scheme__caption cyrcle-scheme__caption--01">
+            <span class="scheme-caption__gap">
+              <span class="scheme-caption__number">01</span>
+            </span>
+            <span class="scheme-caption__text">
+              Our specialist will arrive for measurements per day contact,
+              or appoint a date convenient for you
+            </span>
+          </p>
+
+          <p class="scheme-caption cyrcle-scheme__caption cyrcle-scheme__caption--02">
+            <span class="scheme-caption__gap">
+              <span class="scheme-caption__number">02</span>
+            </span>
+            <span class="scheme-caption__text">Free metering</span>
+          </p>
+
+          <p class="scheme-caption cyrcle-scheme__caption cyrcle-scheme__caption--03">
+            <span class="scheme-caption__gap">
+              <span class="scheme-caption__number">03</span>
+            </span>
+            <span class="scheme-caption__text">Free consultation</span>
+          </p>
+
+          <p class="scheme-caption cyrcle-scheme__caption cyrcle-scheme__caption--04">
+            <span class="scheme-caption__gap">
+              <span class="scheme-caption__number">04</span>
+            </span>
+            <span class="scheme-caption__text">Get a cost estimate and<br> the timing of your future repairs</span>
+          </p>
+        </div>
+
+        <div class="advantages__form-and-sticker-wrapper">
+          <form class="form advantages__form" action="#">
+            <p class="form__legend">Leave a request for free departure of the measurer</p>
+            <label class="form__field advantages__field ">
+              <span>Name:</span>
+              <input class="form__input advantages__input" type="text" placeholder="What is your name:" required>
+            </label>
+            <label class="form__field advantages__field">
+              <span>Phone:</span>
+              <input class="form__input advantages__input" type="tel" placeholder="Your phone number:" required>
+            </label>
+            <label class="form__field advantages__field advantages__field--last">
+              <span>Email:</span>
+              <input class="form__input advantages__input" type="email" placeholder="Your email:" required>
+            </label>
+            <label class="form__checkbox advantages__checkbox">
+              <input class="form__checkbox-input" type="checkbox" checked>
+              <span class="form__custom-checkbox"></span>
+              <span>I agree to the processing of personal data</span>
+            </label>
+            <button class="btn form__btn advantages__btn" type="button">Call the measurer</button>
+          </form>
+
+          <div class="sticker advantages__sticker">
+            <span class="sticker__image-bg" aria-hidden="true">
+              <img class="sticker__image" src="./assets/images/pig.svg" alt="Pig" width="40" height="33">
+            </span>
+            <p class="sticker__text">
+              Help save 10 - 20% of the<br> cost of materials
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 </body>

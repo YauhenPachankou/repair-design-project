@@ -1,0 +1,82 @@
+.advantages {
+  display: none;
+
+  @media (min-width: $screen-desktop) {
+    display: block;
+    width: 100%;
+    min-height: 1091px;
+    padding-top: 180px;
+
+    background-color: $bg-color--light;
+    border-top: 1px solid $text-color--main;
+    border-bottom: 1px solid $text-color--main;
+  }
+}
+
+.advantages__content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1340px;
+}
+
+.advantages__form-and-sticker-wrapper {
+  width: 509px;
+}
+
+.advantages__form {
+  display: block;
+  width: 100%;
+  min-height: 506px;
+  margin-top: 55px;
+  padding-top: 28px;
+  padding-right: 49px;
+  padding-bottom: 17px;
+  padding-left: 49px;
+
+  background-color: $bg-color--darken;
+  box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+}
+
+.advantages__field {
+  height: 50px;
+  margin-bottom: 48px;
+
+  @media (min-width: $screen-desktop) {
+    width: 100%;
+  }
+
+  &--last {
+    margin-bottom: 16px;
+  }
+}
+
+.advantages__input {
+  display: block;
+
+  &::placeholder {
+    font-family: $font-family--4;
+    color: $text-color--light;
+  }
+}
+
+.advantages__checkbox {
+  order: 0;
+  margin: 0;
+  margin-bottom: 39px;
+
+  color: $text-color--light;
+}
+
+.advantages__btn {
+  display: block;
+  width: 213px;
+  margin-left: auto;
+
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.advantages__sticker {
+  margin-top: 38px;
+  margin-left: 35px;
+}
