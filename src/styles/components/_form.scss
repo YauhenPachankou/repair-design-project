@@ -15,7 +15,7 @@
   }
 }
 
-.form__legend {
+.form__title {
   @include setFont($font-family--1, 20px, 25px, 400, center, none, $text-color--light);
 
   width: 280px;
