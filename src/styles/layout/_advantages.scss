@@ -40,6 +40,7 @@
 .advantages__field {
   height: 50px;
   margin-bottom: 48px;
+  color: $text-color--dark-transparent;
 
   @media (min-width: $screen-desktop) {
     width: 100%;
@@ -52,6 +53,8 @@
 
 .advantages__input {
   display: block;
+
+  color: $text-color--light;
 
   &::placeholder {
     font-family: $font-family--4;
