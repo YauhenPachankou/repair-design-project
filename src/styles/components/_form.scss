@@ -133,6 +133,11 @@
   font-size: 15px;
   line-height: 26px;
 
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 10px 0 complement($text-color--main);
+  }
+
   @media (min-width: $screen-desktop) {
     width: 200px;
   }
