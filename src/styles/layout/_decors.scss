@@ -34,8 +34,8 @@
 
   li {
     width: 100%;
-    min-height: 27px;
-    margin-bottom: 15px;
+    min-height: 24px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $screen-desktop) {
@@ -44,7 +44,7 @@
 }
 
 .decors__list-item {
-  @include setFont($font-family--5, 20px, 34px, 400, left, none, $text-color--light);
+  @include setFont($font-family--5, 20px, 22px, 400, left, none, $text-color--light);
 
   padding: 0;
 
