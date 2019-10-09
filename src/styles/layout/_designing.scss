@@ -1,14 +1,49 @@
 .designing {
   width: 100%;
-  min-height: 1964px;
-  padding-top: 170px;
+  padding-top: 173px;
+  padding-right: 18 / 375 * 100%;
+  padding-left: 18 / 375 * 100%;
 
   background-color: $bg-color--dark;
 
   @media (min-width: $screen-desktop) {
-    min-height: 620px;
+    height: 620px;
     padding-top: 153px;
 
     background-color: $bg-color--light;
   }
+}
+
+.designing__title {
+  margin-bottom: 15px;
+
+  @media (min-width: $screen-desktop) {
+    margin-bottom: 12px;
+
+    color: $text-color--darkest;
+  }
+}
+
+.designing__section-icon {
+  margin-bottom: 23px;
+}
+
+.designing__description {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  @media (min-width: $screen-desktop) {
+    width: 765px;
+    max-width: none;
+    padding: 0;
+
+    color: $text-color--darken;
+  }
+}
+
+.designing__cards-list {
+  padding-bottom: 0;
 }

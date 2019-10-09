@@ -19,12 +19,11 @@
 .card__description {
   position: absolute;
   top: 223px;
-
   width: 270px;
-  min-height: 241px;
   padding-top: 21px;
   padding-right: 41px;
   padding-left: 31px;
+  padding-bottom: 35px;
 
   box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
   background-color: $bg-color--light;
@@ -73,12 +72,20 @@
     left: 50%;
 
     width: 330px;
-    min-height: 286px;
     padding-top: 21px;
     padding-right: 41px;
     padding-left: 31px;
+    padding-bottom: 50px;
 
     transform: translateX(-50%);
+  }
+}
+
+.card__adding-field {
+  display: none;
+
+  @media (min-width: $screen-desktop) {
+    display: block;
   }
 }
 
