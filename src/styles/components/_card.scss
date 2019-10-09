@@ -11,6 +11,7 @@
 }
 
 .card__image {
+  display: block;
   width: 100%;
   height: 100%;
 }
@@ -41,7 +42,7 @@
     list-style-type: disc;
   }
 
-  div {
+  a {
     @include centering();
 
     position: absolute;
@@ -54,6 +55,7 @@
     font-family: $font-family--3;
     font-size: 15;
     line-height: 21px;
+    color: $text-color--light;
 
     transform: translateY(50%);
 
@@ -79,3 +81,4 @@
     transform: translateX(-50%);
   }
 }
+

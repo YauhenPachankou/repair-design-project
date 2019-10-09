@@ -3,6 +3,8 @@
   justify-content: space-around;
   flex-wrap: wrap;
   width: 100%;
+  padding-bottom: 210px;
+
 
   @media (min-width: $screen-desktop) {
     justify-content: space-between;
@@ -10,7 +12,7 @@
 }
 
 .cards-list__item {
-  margin-bottom: 178px;
+    margin-bottom: 178px;
 
   @media (min-width: $screen-desktop) {
     margin: 0;

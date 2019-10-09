@@ -1,4 +1,4 @@
-.scroll-btn {
+.btn-scroll {
   @include centering();
 
   width: 247px;
@@ -9,11 +9,11 @@
 
   &:hover,
   &:focus {
-    .scroll-btn__text {
+    .btn-scroll__text {
       color: complement($text-color--main);
     }
 
-    .scroll-btn__img {
+    .btn-scroll__img {
       filter: hue-rotate(180deg);
     }
 
@@ -21,7 +21,7 @@
   }
 }
 
-.scroll-btn__text {
+.btn-scroll__text {
   @include setFont($font-family--3, 14px, 19px, 400, center, uppercase, $text-color--light);
 
   margin-right: 12px;

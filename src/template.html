@@ -29,7 +29,7 @@
 
   <main class="home-main">
     <section class="calculation">
-      <h2 class="section-title section-title--light calculation__title">
+      <h2 class="section-title calculation__title section-title--light">
         Turnkey Repair in the city of <span>Rostov-on-Don</span>
       </h2>
       <p class="calculation__description">
@@ -46,9 +46,9 @@
       <div class="calculation__instagram-wrapper">
         <a class="instagram" href="https://www.instagram.com" target="_blank">INSTAGRAM</a>
       </div>
-      <button class="scroll-btn calculation__scroll-btn">
-        <span class="scroll-btn__text">Scroll down</span>
-        <img class="scroll-btn__img" src="./assets/images/icon-scroll--down.svg" alt="Arrow down" width="29"
+      <button class="btn-scroll calculation__btn-scroll">
+        <span class="btn-scroll__text">Scroll down</span>
+        <img class="btn-scroll__img" src="./assets/images/icon-scroll--down.svg" alt="Arrow down" width="29"
           height="29">
       </button>
     </section>
@@ -57,94 +57,96 @@
       <h2 class="visually-hidden">Projects</h2>
     </section>
 
-    <section class="control">
-      <h3 class="section-title section-title--light control__title">online control</h3>
-      <div class="section-icon control__section-icon">
-        <img src="./assets/images/camera.svg" alt="Camera" width="32" height="28" />
-      </div>
-      <iframe class="control__video" src="https://www.youtube.com/embed/Gi5pCRt2Ns4"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <p class="section-description control__description">
-        At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you
-        can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast
-        from one of our facilities! Leave a request below and you will receive a link to the broadcast.
-      </p>
-      <form class="form control__form" action="#">
-        <label class="form__field">
-          <span>Name:</span>
-          <input class="form__input" type="text" placeholder="What is your name:" required>
-        </label>
-        <label class="form__field form__field--last">
-          <span>Number:</span>
-          <input class="form__input" type="tel" placeholder="Your phone number:" required>
-        </label>
-        <label class="form__checkbox">
-          <input class="form__checkbox-input" type="checkbox" checked>
-          <span class="form__custom-checkbox"></span>
-          <span>I agree to the processing of personal data</span>
-        </label>
-        <button class="btn form__btn control__submit-btn" type="submit">SUMBIT</button>
-      </form>
-    </section>
+    <div class="home-main__control-and-repair-types-wrapper">
+      <section class="control">
+        <h3 class="section-title control__title section-title--light">online control</h3>
+        <div class="section-icon control__section-icon">
+          <img src="./assets/images/camera.svg" alt="Camera" width="32" height="28" />
+        </div>
+        <iframe class="control__video" src="https://www.youtube.com/embed/Gi5pCRt2Ns4"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p class="section-description control__description">
+          At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you
+          can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast
+          from one of our facilities! Leave a request below and you will receive a link to the broadcast.
+        </p>
+        <form class="form control__form" action="#">
+          <label class="form__field">
+            <span>Name:</span>
+            <input class="form__input" type="text" placeholder="What is your name:" required>
+          </label>
+          <label class="form__field form__field--last">
+            <span>Number:</span>
+            <input class="form__input" type="tel" placeholder="Your phone number:" required>
+          </label>
+          <label class="form__checkbox">
+            <input class="form__checkbox-input" type="checkbox" checked>
+            <span class="form__custom-checkbox"></span>
+            <span>I agree to the processing of personal data</span>
+          </label>
+          <button class="btn form__btn control__submit-btn" type="submit">SUMBIT</button>
+        </form>
+      </section>
 
-    <section class="repair-types">
-      <h3 class="section-title section-title--dark repair-types__title">TYPES OF REPAIR</h3>
-      <div class="section-icon repair-types__section-icon">
-        <img src="./assets/images/tools.svg" alt="Tools" width="28" height="28" />
-      </div>
-      <ul class="cards-list repair-types__cards-list">
-        <li class="cards-list__item card">
-          <img class="card__image" src="./assets/images/redecorating.jpg" alt="Redecorating">
-          <section class="card__description">
-            <h4>Redecorating</h4>
-            <ul>
-              <li>Dismantling of old coatings</li>
-              <li>Wallpapering</li>
-              <li>Painting walls and ceilings</li>
-              <li>Laying flooring</li>
-              <li>Replacing plumbing</li>
-              <li>Replacing sockets and switches</li>
-              <li>Replacing doors</li>
-            </ul>
-            <div class="btn">from 900 rub / m2</div>
-          </section>
-        </li>
+      <section class="repair-types">
+        <h3 class="section-title repair-types__title section-title--dark">TYPES OF REPAIR</h3>
+        <div class="section-icon repair-types__section-icon">
+          <img src="./assets/images/tools.svg" alt="Tools" width="28" height="28" />
+        </div>
+        <ul class="cards-list repair-types__cards-list">
+          <li class="card cards-list__item">
+            <img class="card__image" src="./assets/images/redecorating.jpg" alt="Redecorating">
+            <section class="card__description">
+              <h4>Redecorating</h4>
+              <ul>
+                <li>Dismantling of old coatings</li>
+                <li>Wallpapering</li>
+                <li>Painting walls and ceilings</li>
+                <li>Laying flooring</li>
+                <li>Replacing plumbing</li>
+                <li>Replacing sockets and switches</li>
+                <li>Replacing doors</li>
+              </ul>
+              <a class="btn" href="#">from 900 rub / m2</a>
+            </section>
+          </li>
 
-        <li class="cards-list__item card">
-          <img class="card__image" src="./assets/images/overhaul.jpg" alt="Redecorating">
-          <section class="card__description">
-            <h4>Overhaul</h4>
-            <ul>
-              <li>Dismantling of old coatings</li>
-              <li>Wallpapering</li>
-              <li>Painting walls and ceilings</li>
-              <li>Laying flooring</li>
-              <li>Replacing plumbing</li>
-              <li>Replacing sockets and switches</li>
-              <li>Replacing doors</li>
-            </ul>
-            <div class="btn">from 1800 rub / m2</div>
-          </section>
-        </li>
+          <li class="card cards-list__item">
+            <img class="card__image" src="./assets/images/overhaul.jpg" alt="Redecorating">
+            <section class="card__description">
+              <h4>Overhaul</h4>
+              <ul>
+                <li>Dismantling of old coatings</li>
+                <li>Wallpapering</li>
+                <li>Painting walls and ceilings</li>
+                <li>Laying flooring</li>
+                <li>Replacing plumbing</li>
+                <li>Replacing sockets and switches</li>
+                <li>Replacing doors</li>
+              </ul>
+              <a class="btn" href="#">from 1800 rub / m2</a>
+            </section>
+          </li>
 
-        <li class="cards-list__item card">
-          <img class="card__image" src="./assets/images/designer-repair.jpg" alt="Redecorating">
-          <section class="card__description">
-            <h4>Designer Repair</h4>
-            <ul>
-              <li>Dismantling of old coatings</li>
-              <li>Wallpapering</li>
-              <li>Painting walls and ceilings</li>
-              <li>Laying flooring</li>
-              <li>Replacing plumbing</li>
-              <li>Replacing sockets and switches</li>
-              <li>Replacing doors</li>
-            </ul>
-            <div class="btn">from 4000 rub / m2</div>
-          </section>
-        </li>
-      </ul>
-    </section>
+          <li class="card cards-list__item ">
+            <img class="card__image" src="./assets/images/designer-repair.jpg" alt="Redecorating">
+            <section class="card__description">
+              <h4>Designer Repair</h4>
+              <ul>
+                <li>Dismantling of old coatings</li>
+                <li>Wallpapering</li>
+                <li>Painting walls and ceilings</li>
+                <li>Laying flooring</li>
+                <li>Replacing plumbing</li>
+                <li>Replacing sockets and switches</li>
+                <li>Replacing doors</li>
+              </ul>
+              <a class="btn" href=""#>from 4000 rub / m2</a>
+            </section>
+          </li>
+        </ul>
+      </section>
+    </div>
 
     <section class="advantages">
       <h3 class="visually-hidden">Advantages</h3>
@@ -217,6 +219,62 @@
         </div>
       </div>
     </section>
+
+    <div class="home-main__decors-and-designing-wrapper">
+      <section class="decors home-main__decors">
+        <h3 class="section-title decors__title section-title--main-color">We realize your wildest fantasies</h3>
+        <ul class="decors__list">
+          <li>
+            <button class="decors__list-item">American classic</button>
+          </li>
+          <li>
+            <button class="decors__list-item">Empire</button>
+          </li>
+          <li>
+            <button class="decors__list-item">Classical</button>
+          </li>
+          <li>
+            <button class="decors__list-item">Loft</button>
+          </li>
+            <button class="decors__list-item">Minimalism</button>
+          </li>
+          <li>
+            <button class="decors__list-item">Provence</button>
+          </li>
+          <li>
+            <button class="decors__list-item">Romanticism</button>
+          </li>
+          <li>
+            <button class="decors__list-item">Scandinavian style</button>
+          </li>
+          <li>
+            <button class="decors__list-item">Mediterranean style</button>
+          </li>
+          <li>
+            <button class="decors__list-item">High tech</button>
+          </li>
+          <li>
+            <button class="decors__list-item">Eclecticism</button>
+          </li>
+        </ul>
+        <div class="photo-grid decors__photo-grid">
+          <img class="photo-grid__img photo-grid__img--1" src="./assets/images/decors-1.jpg" alt="Dresser">
+          <img class="photo-grid__img photo-grid__img--2" src="./assets/images/decors-2.jpg" alt="Living room">
+          <img class="photo-grid__img photo-grid__img--3" src="./assets/images/decors-3.jpg" alt="Sofa">
+          <img class="photo-grid__img photo-grid__img--4" src="./assets/images/decors-4.jpg" alt="Wall">
+          <button class="btn-slider photo-grid__btn-slider photo-grid__btn-slider--prev">
+            <img class="btn-slider__arrow" src="./assets/images/arrow-left.svg" alt="Previous" width="7" height="10">
+          </button>
+          <button class="btn-slider photo-grid__btn-slider photo-grid__btn-slider--next">
+            <img class="btn-slider__arrow" src="./assets/images/arrow-right.svg" alt="Next" width="7" height="10">
+          </button>
+        </div>
+      </section>
+
+      <section class="designing">
+
+      </section>
+    </div>
   </main>
 </body>
 

@@ -1,7 +1,25 @@
 .home-main {
   width: 100%;
+}
+
+.home-main__control-and-repair-types-wrapper {
+  position: relative;
+}
+
+.home-main__decors-and-designing-wrapper {
+  position: relative;
+
+  @media (min-width: $screen-desktop) {
+    position: static;
+  }
+}
+
+.home-main__decors {
+  position: absolute;
+  top: -205px;
 
   @media (min-width: $screen-desktop) {
     position: relative;
+    top: 0;
   }
 }

@@ -1,0 +1,70 @@
+.decors {
+  width: 100%;
+  padding-right: 18 / 375 * 100%;
+  padding-left: 18 / 375 * 100%;
+
+  @media (min-width: $screen-desktop) {
+    min-height: 864px;
+    padding-top: 137px;
+    padding-right: 99px;
+    padding-left: 102px;
+
+    background-image: url("../assets/images/bg-decors.jpg")
+  }
+}
+
+.decors__title {
+  width: 240px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+
+  @media (min-width: $screen-desktop) {
+    width: 300px;
+    margin: 0;
+    margin-bottom: 47px;
+
+    font-size: 27px;
+    line-height: 37px;
+    text-align: left;
+  }
+}
+
+.decors__list {
+  display: none;
+
+  li {
+    width: 100%;
+    min-height: 27px;
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    display: block;
+  }
+}
+
+.decors__list-item {
+  @include setFont($font-family--5, 20px, 34px, 400, left, none, $text-color--light);
+
+  padding: 0;
+
+  background-color: transparent;
+  border: 0;
+
+  &:focus {
+    color: $text-color--main;
+    border-bottom: 1px solid $text-color--main;
+
+    outline: none;
+  }
+}
+
+.decors__photo-grid {
+  @media (min-width: $screen-desktop) {
+    position: absolute;
+    top: -110px;
+    left: 587px;
+
+    margin: 0;
+  }
+}
