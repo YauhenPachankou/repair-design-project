@@ -21,6 +21,8 @@
 }
 
 .steps__right-column-wrapper {
+  display: flex;
+  flex-direction: column;
   width: 765px;
   height: 100%;
 }
@@ -42,10 +44,12 @@
   margin-bottom: 22px;
 }
 
+.steps__list-of-steps-text {
+  margin-bottom: 16px;
+}
+
 .steps__step-name {
   @include setFont($font-family--3, 15px, 23px, 400, left, uppercase, $text-color--main);
-
-  margin-bottom: 16px;
 }
 
 .steps__step-description {
@@ -58,4 +62,18 @@
   }
 
   margin-bottom: 100px;
+}
+
+.steps__steps-enum {
+  margin-top: 90px;
+}
+
+.steps__images {
+  margin-top: auto;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
 }
