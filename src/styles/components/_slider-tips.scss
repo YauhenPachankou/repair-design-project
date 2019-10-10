@@ -1,0 +1,50 @@
+.slider-tips {
+  display: flex;
+  align-items: center;
+}
+
+.slider-tips__arrow {
+  padding: 0;
+
+  background-color: transparent;
+  border: 0;
+
+  &:focus {
+    svg path {
+      fill: complement($text-color--main);
+    }
+
+    outline: none;
+  }
+
+  &--prev {
+    margin-right: 30px;
+  }
+
+  &--next {
+    margin-left: 30px;
+  }
+}
+
+.slider-tips__tip {
+  width: 10px;
+  height: 10px;
+  margin-right: 17px;
+  padding: 0;
+
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 0;
+  border-radius: 50%;
+
+  &--last {
+    //last-of-type doesn't work
+    margin-right: 0;
+  }
+
+  &:focus {
+    background-color: $bg-color--light;
+
+    outline: none;
+  }
+}
+

@@ -1,0 +1,61 @@
+.steps {
+  display: none;
+
+  @media (min-width: $screen-desktop) {
+    display: flex;
+    width: 100%;
+    min-height: 1615px;
+    padding-top: 430px;
+    padding-right: 100px;
+    padding-bottom: 500px;
+    padding-left: 100px;
+
+    background-color: $bg-color--darken;
+  }
+}
+
+.steps__left-column-wrapper {
+  width: 340px;
+  height: 100%;
+  margin-right: auto;
+}
+
+.steps__right-column-wrapper {
+  width: 765px;
+  height: 100%;
+}
+
+.steps__title {
+  @include setFont($font-family--1, 15px, 21px, 400, left, uppercase, $text-color--light);
+
+  margin-bottom: 18px;
+}
+
+.steps__title-dashed {
+  margin-bottom: 92px;
+}
+
+.steps__counter {
+  @include setFont($font-family--3, 18px, 25px, 400, left, uppercase, $text-color--light);
+
+  display: inline-block;
+  margin-bottom: 22px;
+}
+
+.steps__step-name {
+  @include setFont($font-family--3, 15px, 23px, 400, left, uppercase, $text-color--main);
+
+  margin-bottom: 16px;
+}
+
+.steps__step-description {
+  @include setFont($font-family--2, 15px, 25px, 400, left, none, $text-color--light);
+
+  span {
+    display: inline-block;
+
+    margin-top: 15px;
+  }
+
+  margin-bottom: 100px;
+}
