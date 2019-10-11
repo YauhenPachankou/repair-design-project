@@ -24,10 +24,14 @@
   }
 }
 
-.home-main__steps-and-team-wrapper {
+.home-main__team-and-clients-wrapper {
+  background-color: $bg-color--dark;
+
   @media (min-width: $screen-desktop) {
     position: relative;
 
-    background-color: transparent;
+    min-height: 1522px;
+
+    background-color: $bg-color--light;
   }
 }

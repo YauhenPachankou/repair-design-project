@@ -2,11 +2,11 @@
   position: relative;
 
   width: 340px;
-  min-height: 365px;
+  height: 365px;
 
   @media (min-width: $screen-desktop) {
     width: 393px;
-    min-height: 421px;
+    height: 421px;
   }
 }
 
@@ -19,6 +19,7 @@
 .card__description {
   position: absolute;
   top: 223px;
+
   width: 270px;
   padding-top: 21px;
   padding-right: 41px;
@@ -27,6 +28,19 @@
 
   box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
   background-color: $bg-color--light;
+
+  @media (min-width: $screen-desktop) {
+    top: 294px;
+    left: 50%;
+
+    width: 330px;
+    padding-top: 21px;
+    padding-right: 41px;
+    padding-left: 31px;
+    padding-bottom: 50px;
+
+    transform: translateX(-50%);
+  }
 
   h4 {
     @include setFont($font-family--3, 15px, 21px, 400, left, none, $text-color--darken);
@@ -39,6 +53,11 @@
 
     list-style: inside;
     list-style-type: disc;
+
+    @media (min-width: $screen-desktop) {
+      font-size: 15;
+      line-height: 25px;
+    }
   }
 
   a {
@@ -66,26 +85,13 @@
       line-height: 25px;
     }
   }
-
-  @media (min-width: $screen-desktop) {
-    top: 294px;
-    left: 50%;
-
-    width: 330px;
-    padding-top: 21px;
-    padding-right: 41px;
-    padding-left: 31px;
-    padding-bottom: 50px;
-
-    transform: translateX(-50%);
-  }
 }
 
 .card__adding-field {
   display: none;
 
   @media (min-width: $screen-desktop) {
-    display: block;
+    display: list-item;
   }
 }
 

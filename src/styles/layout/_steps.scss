@@ -44,12 +44,10 @@
   margin-bottom: 22px;
 }
 
-.steps__list-of-steps-text {
-  margin-bottom: 16px;
-}
-
 .steps__step-name {
   @include setFont($font-family--3, 15px, 23px, 400, left, uppercase, $text-color--main);
+
+  margin-bottom: 16px;
 }
 
 .steps__step-description {

@@ -8,9 +8,8 @@
 
   @media (min-width: $screen-desktop) {
     min-height: 1485px;
+    padding: 0;
     padding-top: 775px;
-    padding-right: 100px;
-    padding-left: 104px;
   }
 }
 
@@ -27,6 +26,14 @@
 
   @media (min-width: $screen-desktop) {
     margin-bottom: 31px;
+  }
+}
+
+.repair-types__cards-list {
+  padding-bottom: 210px;
+
+  @media (min-width: $screen-desktop) {
+    margin: 0 auto;
   }
 }
 

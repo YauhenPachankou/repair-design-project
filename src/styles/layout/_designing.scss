@@ -8,6 +8,7 @@
 
   @media (min-width: $screen-desktop) {
     height: 620px;
+    padding: 0;
     padding-top: 153px;
 
     background-color: $bg-color--light;
@@ -45,5 +46,25 @@
 }
 
 .designing__cards-list {
-  padding-bottom: 0;
+  @media (min-width: $screen-desktop) {
+    margin: 0 auto;
+  }
+}
+
+.designing__card-description {
+  padding-bottom: 70px;
+}
+
+.designing__cards-list-item {
+  &:first-child {
+    margin-bottom: 115px;
+  }
+
+  &:nth-child(2) {
+    margin-bottom: 178px;
+  }
+
+  &:last-child {
+    margin-bottom: 195px;
+  }
 }
