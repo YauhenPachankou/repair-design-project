@@ -8,17 +8,11 @@
   background-color: $bg-color--dark;
 
   @media (min-width: $screen-desktop) {
-    position: absolute;
-    top: -324px;
-    left: 50%;
-
     width: 817px;
     min-height: 955px;
     padding: 0;
 
     background-color: transparent;
-
-    transform: translateX(-50%);
   }
 }
 
@@ -88,6 +82,8 @@
 .control__form {
   position: relative;
 
+  margin: 0 auto;
+
   @media (min-width: $screen-desktop) {
     position: static;
   }
@@ -102,6 +98,7 @@
 
   @media (min-width: $screen-desktop) {
     position: static;
+
     transform: none;
   }
 }

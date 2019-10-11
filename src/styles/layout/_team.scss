@@ -6,14 +6,8 @@
   background-color: transparent;
 
   @media (min-width: $screen-desktop) {
-    position: absolute;
-    top: -400px;
-    left: 50%;
-
     width: 1030px;
     padding: 0;
-
-    transform: translateX(-50%);
   }
 }
 

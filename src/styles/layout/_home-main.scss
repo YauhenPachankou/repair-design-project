@@ -6,6 +6,16 @@
   position: relative;
 }
 
+.home-main__control {
+  @media (min-width: $screen-desktop) {
+    position: absolute;
+    top: -324px;
+    left: 50%;
+
+    transform: translateX(-50%);
+  }
+}
+
 .home-main__decors-and-designing-wrapper {
   position: relative;
 
@@ -31,7 +41,25 @@
     position: relative;
 
     min-height: 1522px;
+    padding-top: 530px;
+    padding-bottom: 371px;
 
     background-color: $bg-color--light;
+  }
+}
+
+.home-main__team {
+  @media (min-width: $screen-desktop) {
+    position: absolute;
+    top: -400px;
+    left: 50%;
+
+    transform: translateX(-50%);
+  }
+}
+
+.home-main__clients {
+  @media (min-width: $screen-desktop) {
+    margin: 0 auto;
   }
 }

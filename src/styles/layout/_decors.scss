@@ -60,6 +60,8 @@
 }
 
 .decors__photo-grid {
+  margin: 0 auto;
+
   @media (min-width: $screen-desktop) {
     position: absolute;
     top: -110px;

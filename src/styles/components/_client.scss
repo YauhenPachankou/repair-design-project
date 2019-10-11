@@ -1,0 +1,72 @@
+.client {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+  padding-top: 24px;
+  padding-right: 32px;
+  padding-left: 20px;
+
+  background: $bg-color--light;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+}
+
+.client__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.client__photo {
+  display: block;
+  width: 76px;
+  height: 76px;
+  margin-right: 23px;
+
+  border-radius: 50%;
+}
+
+.client__name {
+  @include setFont($font-family--3, 18px, 23px, 400, left, none, $text-color--darkest);
+}
+
+.client__text {
+  @include setFont($font-family--2, 15px, 27px, 400, left, none, $text-color--dark);
+}
+
+.client__repair-info {
+  @include setFont($font-family--3, 17px, 24px, 400, left, none, $text-color--light);
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  width: 294px;
+  height: 52px;
+
+  box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+
+  transform: translateY(50%);
+}
+
+.client__square,
+.client__repair-days {
+  display: flex;
+  align-items: center;
+  width: 45%;
+  padding-left: 17px;
+
+  border-right: 1px solid $text-color--light;
+
+  img {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+  }
+}
+
+.client__repair-days {
+  width: 55%;
+}

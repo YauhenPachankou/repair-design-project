@@ -1,0 +1,22 @@
+.clients {
+  display: none;
+
+  @media (min-width: $screen-desktop) {
+    display: block;
+    width: 1236px;
+  }
+}
+
+.clients__title {
+  margin-bottom: 13px;
+}
+
+.clients__section-icon {
+  margin-bottom: 25px;
+}
+
+.clients__description {
+  margin-bottom: 39px;
+
+  color: $text-color--darken;
+}

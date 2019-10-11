@@ -1,0 +1,11 @@
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.clients-list__item {
+  width: 376px;
+  min-height: 428px;
+  margin-bottom: 20px;
+}
