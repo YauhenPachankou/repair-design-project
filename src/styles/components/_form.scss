@@ -95,6 +95,8 @@
 }
 
 .form__checkbox-input {
+  position: absolute;
+
   -webkit-appearance: none;
   appearance: none;
 
@@ -116,6 +118,7 @@
 .form__custom-checkbox {
   width: 18px;
   height: 18px;
+  margin: 0;
   margin-right: 9px;
 
   background-color: $btn-bgcolor--main;

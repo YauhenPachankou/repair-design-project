@@ -198,7 +198,7 @@
             </label>
             <label class="form__field advantages__field advantages__field--last">
               <span>Email:</span>
-              <input class="form__input advantages__input" type="email" placeholder="Your email:" required>
+              <input class="form__input advantages__input" type="email" placeholder="Your email" required>
             </label>
             <label class="form__checkbox advantages__checkbox">
               <input class="form__checkbox-input" type="checkbox" checked>
@@ -569,7 +569,51 @@
         </ul>
       </section>
     </div>
+    <div class="home-main__form-and-map-wrapper">
+      <form class="form home-main__form" action="#">
+        <p class="form__title home-main__form-title">have any questions?</p>
+        <label class="form__field home-main__form-field">
+          <span>Name:</span>
+          <input class="form__input home-main__form-input" type="text" placeholder="What is your name:" required>
+        </label>
+        <label class="form__field home-main__form-field">
+          <span>Phone:</span>
+          <input class="form__input home-main__form-input" type="tel" placeholder="Your phone number:" required>
+        </label>
+        <label class="form__field home-main__form-field home-main__form-field--last">
+          <span>Question:</span>
+          <input class="form__input home-main__form-input" type="email" placeholder="I want to know" required>
+        </label>
+        <label class="form__checkbox home-main__form-checkbox">
+          <input class="form__checkbox-input" type="checkbox" checked>
+          <span class="form__custom-checkbox"></span>
+          <span>I agree to the processing of personal data</span>
+        </label>
+        <button class="btn form__btn home-main__form-btn" type="submit">submit</button>
+      </form>
+
+      <section class="map">
+        <iframe class="map__frame" src="https://yandex.by/map-widget/v1/-/CCsnb1S" width="560" height="400"
+          frameborder="1" allowfullscreen="true"></iframe>
+          <adress class="adress map__adress">
+            <h3 class="adress__street">
+              Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel
+              <a href="tel:+7(928)7683229">+7 (928) 768 3229</a>
+            </h3>
+            <div class="social-links">
+              <a class="social-links__link" href="https://www.google.com/intl/ru/gmail/about/">
+                <img src="./assets/images/gmail.svg" alt="Gmail">
+              </a>
+              <a class="social-links__link" href="https://www.instagram.com/">
+                <img src="./assets/images/instagram.svg" alt="Instagram">
+              </a>
+            </div>
+          </adress>
+        </div>
+      </section>
+    </div>
   </main>
 </body>
+
 
 </html>

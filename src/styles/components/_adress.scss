@@ -1,0 +1,24 @@
+.adress {
+  @include setFont($font-family--3, 18px, 25px, 400, center, uppercase, $text-color--main);
+
+  @media (min-width: $screen-desktop) {
+    width: 590px;
+  }
+}
+
+.adress__street {
+  margin-bottom: 23px;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  a {
+    @include setFont($font-family--3, 18px, 25px, 400, center, uppercase, $text-color--main);
+
+    &:hover,
+    &:focus {
+      color: complement($text-color--main);
+
+      outline: none;
+    }
+  }
+}

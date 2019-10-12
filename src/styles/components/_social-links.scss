@@ -1,0 +1,25 @@
+.social-links {
+  @include centering();
+}
+
+.social-links__link {
+  @include centering();
+
+  width: 39px;
+  height: 39px;
+  margin-right: 20px;
+
+  background-color: $btn-bgcolor--main;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: complement($btn-bgcolor--main);
+
+    outline: none;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

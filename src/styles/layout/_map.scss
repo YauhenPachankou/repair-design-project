@@ -1,0 +1,43 @@
+.map {
+  width: 100%;
+  min-height: 510px;
+  padding-top: 46px;
+  padding-right: 18 / 375 * 100%;
+  padding-left: 18 / 375 * 100%;
+
+  background-color: $bg-color--dark;
+
+  @media (min-width: $screen-desktop) {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 953px;
+    padding: 0;
+    padding-top: 274px;
+
+    background-image: url("../assets/images/bg-map.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.map__frame {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: 255px;
+  margin: 0 auto;
+  margin-bottom: 41px;
+
+  @media (min-width: $screen-desktop) {
+    width: 925px;
+    max-width: none;
+    height: 465px;
+    margin: 0;
+  }
+}
+
+.map__adress {
+  margin-bottom: 43px;
+}
