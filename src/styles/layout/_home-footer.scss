@@ -1,0 +1,16 @@
+.home-footer {
+  display: none;
+
+  @media (min-width: $screen-desktop) {
+    @include centering();
+
+    width: 100%;
+    min-height: 133px;
+
+    background-color: $bg-color--darkest;
+  }
+}
+
+.home-footer__nav {
+  width: 1256px;
+}
