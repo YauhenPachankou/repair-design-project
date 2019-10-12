@@ -53,9 +53,95 @@
       </button>
     </section>
 
+
+
+
+
+
+
+
+
     <section class="projects">
-      <h2 class="visually-hidden">Projects</h2>
+      <div class="projects__left-column-top">
+        <h3 class="section-title projects__title">Completed projects</h3>
+        <p class="section-description projects__description">
+          Only a small part of the work performed by our company is presented on the site. For 14 years on in the
+          construction market we have made happy more than 1000 families
+        </p>
+      </div>
+
+      <div class="projects__right-column">
+        <div class="projects__names">
+          <button class="projects__name">Rostov-on-Don, Admiral</button>
+          <button class="projects__name">Sochi Thieves</button>
+          <button class="projects__name">Rostov-on-Don Patriotic</button>
+        </div>
+
+        <div class="photo-slider projects__photo-slider">
+          <img class="photo-slider__img" src="./assets/images/projects-photo--2.jpg" alt="Photo">
+          <button class="btn-slider photo-slider__btn-slider photo-slider__btn-slider--prev">
+            <img src="./assets/images/arrow-left.svg" alt="Prev">
+          </button>
+          <button class="btn-slider photo-slider__btn-slider photo-slider__btn-slider--next">
+            <img src="./assets/images/arrow-right.svg" alt="Next">
+          </button>
+        </div>
+      </div>
+
+      <div class="projects__left-column-bottom">
+        <ul class="project-info projects__info">
+          <li class="project-info__item">
+            <span>City:</span>
+            <p>Rostov-on-Don<br> LCD admiral</p>
+          </li>
+          <li class="project-info__item">
+            <span>Apartment area:</span>
+            <p>81 m2</p>
+          </li>
+          <li class="project-info__item">
+            <span>Repair time:</span>
+            <p>3.5 months</p>
+          </li>
+          <li class="project-info__item">
+            <span>Repair Cost:</span>
+            <p>Upon request</p>
+          </li>
+        </ul>
+
+        <div class="slider-tips projects__slider-tips">
+          <button class="slider-tips__arrow slider-tips__arrow--prev" type="button">
+            <svg width="42" height="14" viewBox="0 0 42 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M6.63807 13.6019L2.29917e-05 6.96389L6.63807 0.325844L7.58563 1.27341L1.89516 6.96389L7.58563 12.6544L6.63807 13.6019Z"
+                fill="white" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.947579 6.29396L41.4556 6.29397L41.4556 7.63403L0.947578 7.63403L0.947579 6.29396Z" fill="white" />
+            </svg>
+          </button>
+
+          <button class="slider-tips__tip" type="button" aria-label="slider tip"></button>
+          <button class="slider-tips__tip" type="button" aria-label="slider tip"></button>
+          <button class="slider-tips__tip slider-tips__tip--last" type="button" aria-label="slider tip"></button>
+
+          <button class="slider-tips__arrow slider-tips__arrow--next" type="button">
+            <svg width="42" height="14" viewBox="0 0 42 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M35.362 0.325806L42 6.96385L35.362 13.6019L34.4144 12.6543L40.1049 6.96385L34.4144 1.27337L35.362 0.325806Z"
+                fill="white" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M41.0524 7.63364L0.544433 7.63364L0.544434 6.29358L20.7984 6.29358L41.0524 6.29358L41.0524 7.63364Z"
+                fill="white" />
+            </svg>
+          </button>
+        </div>
+      </div>
     </section>
+
+
+
+
+
+
 
     <div class="home-main__control-and-repair-types-wrapper">
       <section class="control home-main__control">
@@ -425,7 +511,7 @@
       <section class="team home-main__team">
         <h3 class="section-title team__title section-title--light">Our team</h3>
         <div class="section-icon team__section-icon">
-          <img src="./assets/images/pen.svg" alt="Tools" width="28" height="28" />
+          <img src="./assets/images/team.svg" alt="Team" width="28" height="28" />
         </div>
         <p class="section-description team__section-description">
           Our team has helped to become happier for more than 500 families and we are not going to stop
@@ -593,22 +679,20 @@
       </form>
 
       <section class="map">
-        <iframe class="map__frame" src="https://yandex.by/map-widget/v1/-/CCsnb1S" width="560" height="400"
-          frameborder="1" allowfullscreen="true"></iframe>
-          <adress class="adress map__adress">
-            <h3 class="adress__street">
-              Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel
-              <a href="tel:+7(928)7683229">+7 (928) 768 3229</a>
-            </h3>
-            <div class="social-links">
-              <a class="social-links__link" href="https://www.google.com/intl/ru/gmail/about/">
-                <img src="./assets/images/gmail.svg" alt="Gmail">
-              </a>
-              <a class="social-links__link" href="https://www.instagram.com/">
-                <img src="./assets/images/instagram.svg" alt="Instagram">
-              </a>
-            </div>
-          </adress>
+        <iframe class="map__frame" src="https://yandex.by/map-widget/v1/-/CCsnb1S" width="560" height="400"></iframe>
+        <div class="adress map__adress">
+          <h3 class="adress__street">
+            Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel
+            <a href="tel:+7(928)7683229">+7 (928) 768 3229</a>
+          </h3>
+          <div class="social-links">
+            <a class="social-links__link" href="https://www.google.com/intl/ru/gmail/about/" target="_blank">
+              <img src="./assets/images/gmail.svg" alt="Gmail">
+            </a>
+            <a class="social-links__link" href="https://www.instagram.com/" target="_blank">
+              <img src="./assets/images/instagram.svg" alt="Instagram">
+            </a>
+          </div>
         </div>
       </section>
     </div>
@@ -632,4 +716,5 @@
     </nav>
   </footer>
 </body>
+
 </html>

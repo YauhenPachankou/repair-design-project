@@ -48,6 +48,11 @@
   box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
 
   transform: translateY(50%);
+
+  &:hover,
+  &:focus {
+    background-color: $btn-bgcolor--main;
+  }
 }
 
 .client__square,

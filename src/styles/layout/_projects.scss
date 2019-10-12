@@ -1,13 +1,53 @@
 .projects {
   width: 100%;
-  min-height: 670px;
+  padding-top: 36px;
+  padding-right: 18 / 375 * 100%;
+  padding-left: 18 / 375 * 100%;
 
   background-color: $bg-color--dark;
-  border-bottom: 1px solid $text-color--main;
 
   @media (min-width: $screen-desktop) {
     min-height: 1073px;
 
     background-color: $bg-color--darken;
   }
+}
+
+.projects__left-column-top {
+  display: block;
+
+  margin-bottom: 36px;
+}
+
+.projects__title {
+  margin-bottom: 22px;
+}
+
+.projects__description {
+  display: block;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.projects__right-column {
+  display: block;
+  max-width: 340px;
+  margin: 0 auto;
+  margin-bottom: 36px;
+}
+
+.projects__names {
+  display: none;
+}
+
+.projects__left-column-bottom {
+  display: block;
+}
+
+.projects__slider-tips {
+  display: none;
+}
+
+.projects__info {
+  margin: 0 auto;
 }

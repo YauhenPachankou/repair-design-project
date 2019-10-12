@@ -50,6 +50,11 @@
   width: 100%;
   min-height: 44px;
   margin-top: auto;
+
+  &:hover,
+  &:focus {
+    background-color: $btn-bgcolor--main;
+  }
 }
 
 .employee__sticker {

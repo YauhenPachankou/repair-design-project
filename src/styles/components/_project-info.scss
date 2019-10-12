@@ -1,0 +1,21 @@
+.project-info {
+  display: grid;
+  width: 340px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.project-info__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 27px;
+
+  span {
+    @include setFont($font-family--3, 14px, 19px, 400, left, uppercase, $text-color--main);
+
+    margin-bottom: 11px;
+  }
+
+  p {
+    @include setFont($font-family--2, 14px, 19px, 400, left, none, $text-color--light);
+  }
+}
