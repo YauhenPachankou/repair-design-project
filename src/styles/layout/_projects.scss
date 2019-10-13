@@ -7,7 +7,13 @@
   background-color: $bg-color--dark;
 
   @media (min-width: $screen-desktop) {
+    display: grid;
+    grid-template-columns: 485px auto;
+    grid-template-rows: 295px 260px;
     min-height: 1073px;
+    padding: 0;
+    padding-top: 107px;
+    padding-left: 101px;
 
     background-color: $bg-color--darken;
   }
@@ -15,18 +21,55 @@
 
 .projects__left-column-top {
   display: block;
-
+  max-width: 500px;
+  margin: 0 auto;
   margin-bottom: 36px;
+
+  @media (min-width: $screen-desktop) {
+    grid-column: 1;
+    grid-row: 1;
+    max-width: none;
+    margin: 0;
+    padding-top: 70px;
+  }
 }
 
 .projects__title {
   margin-bottom: 22px;
+
+  @media (min-width: $screen-desktop) {
+    @include setFont($font-family--3, 27px, 37px, 400, left, uppercase, $text-color--main);
+
+    position: relative;
+
+    width: 180px;
+    margin-bottom: 34px;
+
+    &::after {
+      position: absolute;
+      bottom: 18px;
+      left: 212px;
+
+      width: 92px;
+      height: 1px;
+
+      border: 1px solid $text-color--main;
+
+      content: '';
+    }
+  }
 }
 
 .projects__description {
   display: block;
-  max-width: 500px;
-  margin: 0 auto;
+
+  @media (min-width: $screen-desktop) {
+    padding-right: 20px;
+
+    font-size: 18px;
+    line-height: 29px;
+    text-align: left;
+  }
 }
 
 .projects__right-column {
@@ -34,20 +77,71 @@
   max-width: 340px;
   margin: 0 auto;
   margin-bottom: 36px;
+
+  @media (min-width: $screen-desktop) {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    max-width: none;
+    margin: 0;
+  }
 }
 
 .projects__names {
   display: none;
+
+  @media (min-width: $screen-desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 53px;
+  }
+}
+
+.projects__name {
+  @include setFont($font-family--3, 14px, 19px, 400, left, uppercase, $text-color--dark-transparent);
+
+  margin-right: 60px;
+  padding: 0;
+
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid transparent;
+
+  &:focus {
+    box-sizing: border-box;
+    color: $text-color--main;
+    border-bottom-color: $text-color--main;
+
+    outline: none;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .projects__left-column-bottom {
-  display: block;
+  @media (min-width: $screen-desktop) {
+    grid-column: 1;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .projects__slider-tips {
   display: none;
+
+  @media (min-width: $screen-desktop) {
+    display: block;
+    margin-top: auto;
+    margin-right: auto;
+  }
 }
 
 .projects__info {
   margin: 0 auto;
+
+  @media (min-width: $screen-desktop) {
+    margin: 0;
+  }
 }

@@ -2,6 +2,10 @@
   display: grid;
   width: 340px;
   grid-template-columns: repeat(2, 1fr);
+
+  @media (min-width: $screen-desktop) {
+    width: 390px;
+  }
 }
 
 .project-info__item {
@@ -13,9 +17,19 @@
     @include setFont($font-family--3, 14px, 19px, 400, left, uppercase, $text-color--main);
 
     margin-bottom: 11px;
+
+    @media (min-width: $screen-desktop) {
+      font-size: 18px;
+      line-height: 25px;
+    }
   }
 
   p {
     @include setFont($font-family--2, 14px, 19px, 400, left, none, $text-color--light);
+
+    @media (min-width: $screen-desktop) {
+      font-size: 15px;
+      line-height: 20px;
+    }
   }
 }
