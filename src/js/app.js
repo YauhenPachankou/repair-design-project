@@ -1,7 +1,4 @@
-/* eslint-disable import/prefer-default-export */
-/* eslint-disable no-console */
-import $ from 'jquery';
+import scrollDown from './modules/scrollDown';
+import popupForm from './modules/popupForm';
 
-const test = $('.test').html();
-
-export { test };
+export { scrollDown, popupForm };
