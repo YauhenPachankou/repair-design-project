@@ -89,6 +89,12 @@
   }
 }
 
+.control__checkbox {
+  @media (min-width: $screen-desktop) {
+    @include centering();
+  }
+}
+
 .control__submit-btn {
   position: absolute;
   bottom: 0;
