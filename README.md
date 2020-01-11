@@ -2,7 +2,7 @@
 
 Usefull commands:
 
-  1. To run locally you need to run
+  1. To run locally you need to run:
 
     npm run dev
 
