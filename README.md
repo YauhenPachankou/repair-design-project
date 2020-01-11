@@ -1,6 +1,6 @@
 # repair-design-project
 
-Usefull commands:
+Useful commands:
 
   1. To run locally you need to run:
 
